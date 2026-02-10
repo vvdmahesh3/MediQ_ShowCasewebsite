@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediQ | Intelligent Medical Analytics</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+
+  <!-- Background Effects -->
+  <div class="glow-bg"></div>
+  <div class="noise"></div>
+
+  <main class="viewport">
+
+    <!-- Top Navigation -->
+    <nav class="top-nav reveal">
+      <div class="status-pill">
+        <span class="pulse"></span> Production-style Architecture
+      </div>
+
+      <div class="nav-actions">
+        <!-- GitHub Profile -->
+        <a href="https://github.com/vvdmahesh3" target="_blank" class="git-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          <span>Profile</span>
+        </a>
+
+        <!-- Project Repo -->
+        <a href="https://github.com/vvdmahesh3/MediQ" target="_blank" class="repo-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4 2h10l6 6v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm10 1.5V9h5.5L14 3.5z"/>
+          </svg>
+          <span>Project Repo</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1 class="reveal-hero">Medi<span>Q</span></h1>
+      <p class="reveal-text">
+        AI-powered medical intelligence platform.<br>
+        Turning raw medical reports into clear, actionable insights.
+      </p>
+
+      <div class="hero-actions reveal-buttons">
+        <a href="assets/code_mediq.mp4" target="_blank" class="btn btn-glass">Watch Demo</a>
+        <a href="assets/MediQ_Presentation.pdf" target="_blank" class="btn btn-outline">View Presentation</a>
+      </div>
+
+      <p class="micro-note">Designed with clarity, automation, and production-ready workflows.</p>
+    </section>
+
+    <!-- Product Snapshots -->
+    <section class="gallery-section section">
+      <div class="section-header">
+        <span class="line"></span>
+        <h2>Product Snapshots</h2>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Landing -->
+        <div class="bento-item tall" onclick="expandImage(this)">
+          <img src="assets/screenshots/LandingPage.png" alt="Landing Page">
+          <div class="bento-overlay"><h4>Landing Experience</h4></div>
+          <div class="bento-desc">
+            <strong>Platform Entry Point</strong>
+            <p>Clean interface designed to communicate MediQ’s purpose and value within seconds.</p>
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div class="bento-item wide" onclick="expandImage(this)">
+          <img src="assets/screenshots/ResultsDashboard.png" alt="Results Dashboard">
+          <div class="bento-overlay"><h4>Results Dashboard</h4></div>
+          <div class="bento-desc">
+            <strong>AI Insights Dashboard</strong>
+            <p>Structured visualization of biomarkers, risk indicators, and AI-driven clinical interpretations.</p>
+          </div>
+        </div>
+
+        <!-- Upload -->
+        <div class="bento-item small" onclick="expandImage(this)">
+          <img src="assets/screenshots/UploadInterface.png" alt="Upload Interface">
+          <div class="bento-overlay"><h4>Upload Flow</h4></div>
+          <div class="bento-desc">
+            <strong>Data Ingestion Flow</strong>
+            <p>Simple upload interface supporting PDFs, images, and CSVs with intelligent routing.</p>
+          </div>
+        </div>
+
+        <!-- API -->
+        <div class="bento-item small" onclick="expandImage(this)">
+          <img src="assets/screenshots/api-key-status.png" alt="API Status">
+          <div class="bento-overlay"><h4>API Status</h4></div>
+          <div class="bento-desc">
+            <strong>Live API Health Monitoring</strong>
+            <p>Real-time backend availability indicator for transparency and reliability.</p>
+          </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="bento-item wide" onclick="expandImage(this)">
+          <img src="assets/screenshots/system-generated-summary.png" alt="System Summary">
+          <div class="bento-overlay"><h4>Clinical Summary</h4></div>
+          <div class="bento-desc">
+            <strong>AI Clinical Summary</strong>
+            <p>Automated interpretation highlighting biomarker variations and velocity shifts.</p>
+          </div>
+        </div>
+
+        <!-- Parameters -->
+        <div class="bento-item tall" onclick="expandImage(this)">
+          <img src="assets/screenshots/medical-parameters-reference.png" alt="Medical Parameters">
+          <div class="bento-overlay"><h4>Biomarker Reference</h4></div>
+          <div class="bento-desc">
+            <strong>Structured Biomarker Interpretation</strong>
+            <p>Parameters displayed with clinically accepted reference ranges.</p>
+          </div>
+        </div>
+
+        <!-- Medical Note -->
+        <div class="bento-item small" onclick="expandImage(this)">
+          <img src="assets/screenshots/medical-note.png" alt="Medical Note">
+          <div class="bento-overlay"><h4>Clinical Governance</h4></div>
+          <div class="bento-desc">
+            <strong>Clinical Safety & Governance</strong>
+            <p>Safety note emphasizing responsible AI usage for decision support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data Access -->
+    <section class="data-access section">
+      <div class="vault-card neo" onclick="window.open('https://drive.google.com/drive/folders/1T4sHK20pMISk1dGGWZeF_9vWZINm3XZe?usp=sharing', '_blank')">
+        <div class="vault-glow"></div>
+        <div class="vault-inner">
+          <div class="icon-orb">🗂️</div>
+          <div class="vault-info">
+            <h3>AI Output Repository</h3>
+            <p>Generated JSON, PDFs, and visual outputs produced by MediQ’s inference pipeline.</p>
+            <ul class="meta">
+              <li>JSON</li><li>PDF</li><li>Images</li>
+            </ul>
+          </div>
+        </div>
+        <div class="vault-link">Explore Outputs →</div>
+      </div>
+
+      <div class="vault-card neo" onclick="window.open('https://drive.google.com/drive/folders/1cn7PoxDam6-w3cjSpG5LTLdHdcDXnlR6?usp=sharing', '_blank')">
+        <div class="vault-glow"></div>
+        <div class="vault-inner">
+          <div class="icon-orb">🧪</div>
+          <div class="vault-info">
+            <h3>Validation Dataset</h3>
+            <p>Raw medical reports used for OCR validation and stress evaluation.</p>
+            <ul class="meta">
+              <li>PDF</li><li>CSV</li><li>TXT</li>
+            </ul>
+          </div>
+        </div>
+        <div class="vault-link">Access Dataset →</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 MediQ · Built by Mahesh</p>
+    </footer>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="this.classList.remove('active')">
+    <img id="lightbox-img" src="" alt="Zoomed Preview">
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+
+    function expandImage(item) {
+      const img = item.querySelector('img').src;
+      document.getElementById('lightbox-img').src = img;
+      document.getElementById('lightbox').classList.add('active');
+    }
+
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.15 });
+
+    sections.forEach(sec => observer.observe(sec));
+    window.onload = () => document.body.classList.add('loaded');
+  </script>
+
+</body>
+</html>
